@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses - IHMS Kotdwara</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #f5f7fa;
+            color: #222;
+        }
+        /* Header */
+        
+        header {
+            background: linear-gradient(45deg, #003c64, #005b96);
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+        }
+        
+        header h1 {
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+        
+        header p {
+            font-size: 20px;
+        }
+        /* Fees Table */
+        
+        .fees {
+            max-width: 900px;
+            margin: 50px auto;
+            text-align: center;
+        }
+        
+        .fees h2 {
+            margin-bottom: 20px;
+            color: #003c64;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        
+        table th {
+            background: #003c64;
+            color: white;
+            padding: 12px;
+        }
+        
+        table td {
+            padding: 12px;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        table tr:hover {
+            background: #f1f5f9;
+        }
+        /* Courses */
+        
+        .courses {
+            max-width: 1200px;
+            margin: auto;
+            padding: 70px 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+        
+        .card {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+            transition: 0.4s;
+        }
+        
+        .card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .card h2 {
+            color: #003c64;
+            margin-bottom: 15px;
+            font-size: 28px;
+        }
+        
+        .card p {
+            color: #555;
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+        
+        .card a {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 22px;
+            background: #003c64;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+        }
+        
+        .card a:hover {
+            background: #005b96;
+        }
+        /* Footer */
+        
+        footer {
+            text-align: center;
+            padding: 30px;
+            background: #003c64;
+            color: white;
+        }
+        /* Responsive */
+        
+        @media(max-width:768px) {
+            header h1 {
+                font-size: 34px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Our Courses</h1>
+        <p>Explore career-oriented programs at IHMS Kotdwara</p>
+    </header>
+
+    <!-- Fees Table -->
+    <section class="fees">
+        <h2>Course Fees Structure</h2>
+        <table>
+            <tr>
+                <th>Course</th>
+                <th>Duration</th>
+                <th>Fees (Per Year)</th>
+            </tr>
+            <tr>
+                <td>MBA</td>
+                <td>2 Years</td>
+                <td>₹1,20,000</td>
+            </tr>
+            <tr>
+                <td>MCA</td>
+                <td>2 Years</td>
+                <td>₹1,40,000</td>
+            </tr>
+            <tr>
+                <td>BHM</td>
+                <td>4 Years</td>
+                <td>₹95,000</td>
+            </tr>
+            <tr>
+                <td>BBA</td>
+                <td>3 Years</td>
+                <td>₹88,000</td>
+            </tr>
+            <tr>
+                <td>BCA</td>
+                <td>3 Years</td>
+                <td>₹85,000</td>
+            </tr>
+            <tr>
+                <td>B.Sc IT</td>
+                <td>3 Years</td>
+                <td>₹85,000</td>
+            </tr>
+            <tr>
+                <td>C.H.M</td>
+                <td>6 months</td>
+                <td>₹75,000</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- Courses -->
+    <section class="courses">
+
+        <div class="card">
+            <h2>MBA</h2>
+            <p><b>Duration:</b> 2 Years</p>
+            <p><b>Eligibility:</b> Graduation</p>
+            <p><b>Key Subjects:</b> Marketing, Finance, HR, Business Strategy</p>
+            <p><b>Career:</b> Manager, Business Analyst, HR Executive</p>
+            <a href="/apply">Apply Now</a>
+        </div>
+
+        <div class="card">
+            <h2>MCA</h2>
+            <p><b>Duration:</b> 2 Years</p>
+            <p><b>Eligibility:</b> Graduation with Maths</p>
+            <p><b>Key Subjects:</b> Programming, Database, Networking</p>
+            <p><b>Career:</b> Software Developer, IT Analyst</p>
+            <a href="/apply">Apply Now</a>
+        </div>
+
+        <div class="card">
+            <h2>BHM</h2>
+            <p><b>Duration:</b> 4 Years</p>
+            <p><b>Eligibility:</b> 12th Pass</p>
+            <p><b>Key Subjects:</b> Hospitality, Food Production, Tourism</p>
+            <p><b>Career:</b> Hotel Manager, Chef, Event Manager</p>
+            <a href="/apply">Apply Now</a>
+        </div>
+
+        <div class="card">
+            <h2>BBA</h2>
+            <p><b>Duration:</b> 3 Years</p>
+            <p><b>Eligibility:</b> 12th Pass</p>
+            <p><b>Key Subjects:</b> Business Management, Marketing, Finance</p>
+            <p><b>Career:</b> Manager, Entrepreneur, Sales Executive</p>
+            <a href="/apply">Apply Now</a>
+        </div>
+
+        <div class="card">
+            <h2>BCA</h2>
+            <p><b>Duration:</b> 3 Years</p>
+            <p><b>Eligibility:</b> 12th with Maths</p>
+            <p><b>Key Subjects:</b> Programming, Web Development, Data Structures</p>
+            <p><b>Career:</b> Software Developer, Web Developer</p>
+            <a href="/apply">Apply Now</a>
+        </div>
+
+        <div class="card">
+            <h2>B.Sc IT</h2>
+            <p><b>Duration:</b> 3 Years</p>
+            <p><b>Eligibility:</b> 12th Science</p>
+            <p><b>Key Subjects:</b> IT Systems, Networking, Cyber Security</p>
+            <p><b>Career:</b> IT Specialist, Network Engineer</p>
+            <a href="/apply">Apply Now</a>
+        </div>
+
+        <div class="card">
+            <h2>C.H.M</h2>
+            <p><b>Duration:</b> 6 months</p>
+            <p><b>Eligibility:</b> 12th pass</p>
+            <p><b>Subjects:</b> Not specific</p>
+            <p><b>Career:</b> Chef, Waiter </p>
+            <a href="/apply">Apply Now</a>
+        </div>
+
+    </section>
+
+    <footer>
+        © 2026 IHMS Kotdwara | Excellence in Education
+    </footer>
+
+</body>
+
+</html>

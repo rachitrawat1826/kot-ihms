@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IHMS - Excellence in Education</title>
+
+    <link rel="stylesheet" href="/css/home.css">
+    <link rel="stylesheet" href="/css/bot.css">
+
+    <style>
+        /* Hero Background Image */
+        
+        .hero {
+            height: 100vh;
+            background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url('https://www.ihms.ac.in/wp-content/uploads/2022/04/DSC_3730.jpg') center/cover no-repeat;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+        }
+        /* Hero Text */
+        
+        .hero-content h1 {
+            font-size: 55px;
+            margin-bottom: 20px;
+        }
+        
+        .hero-content p {
+            font-size: 22px;
+            margin-bottom: 30px;
+        }
+        
+        .hero-buttons a {
+            padding: 12px 25px;
+            margin: 10px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        
+        .btn-primary {
+            background: #ff6600;
+            color: white;
+        }
+        
+        .btn-secondary {
+            background: white;
+            color: black;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h2>IHMS KOTDWARA</h2>
+            </div>
+
+            <ul class="nav-menu">
+                <li><a href="/home">Home</a></li>
+                <li><a href="/course">Courses</a></li>
+                <li><a href="/admission">Admission</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+
+            <div class="nav-buttons">
+                <% if(!currentUser) { %>
+                    <a href="/login" class="btn-login">Login</a>
+                    <a href="/apply" class="btn-apply">Apply Now</a>
+                    <% } %>
+                        <% if(currentUser) { %>
+                            <a href="/logout" class="logout">Log out</a>
+                            <% } %>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Shape Your Future with Excellence</h1>
+            <p>Join thousands of successful graduates from Institute of Hospitality, Management and Sciences</p>
+            <p>Empowering Futures Through Excellence in Education at IHMS Kotdwara</p>
+
+
+    </section>
+
+    <!-- ADD THIS SECTION BEFORE QUICK ACCESS -->
+
+    <!-- About College Section -->
+    <section class="about-college">
+        <div class="container">
+
+            <h2>About IHMS Kotdwara</h2>
+            <p>
+                Institute of Hospitality, Management and Sciences, is one of the leading educational institutions in Uttarakhand. The college is known for providing quality education in the fields of hospitality, hotel management, business management, science, and professional
+                studies. It aims to prepare students for successful careers through modern education and practical training.
+            </p>
+
+            <p>
+                The college offers a student-friendly environment with experienced faculty members, modern classrooms, computer labs, library facilities, and skill development programs. IHMS focuses on both academic excellence and personality development so that students
+                can confidently face future challenges in their careers..
+            </p>
+
+
+    </section>
+
+    <style>
+        /* About Section */
+        
+        .about-college {
+            padding: 70px 20px;
+            background: #ffffff;
+            text-align: center;
+        }
+        
+        .about-college h2 {
+            font-size: 38px;
+            margin-bottom: 20px;
+            color: #2c5aa0;
+        }
+        
+        .about-college p {
+            max-width: 900px;
+            margin: 0 auto 20px;
+            font-size: 18px;
+            line-height: 1.8;
+            color: #444;
+        }
+        /* Gallery */
+        
+        .college-gallery {
+            margin-top: 40px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+        
+        .college-gallery img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 15px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+            transition: 0.4s;
+        }
+        
+        .college-gallery img:hover {
+            transform: scale(1.05);
+        }
+        /* Dark Mode */
+        
+        body.dark-mode .about-college {
+            background: #1a1a1a;
+        }
+        
+        body.dark-mode .about-college h2,
+        body.dark-mode .about-college p {
+            color: white;
+        }
+    </style>
+
+    <!-- ADD THIS SECTION TO YOUR WEBSITE -->
+
+    <section class="stats-section">
+
+        <div class="overlay"></div>
+
+        <!-- Top Stats -->
+        <div class="stats-container">
+
+            <div class="stat-box">
+                <h2 class="counter" data-target="20">0</h2>
+                <p>Years</p>
+            </div>
+
+            <div class="stat-box">
+                <h2 class="counter" data-target="150">0</h2>
+                <p>Recruiters</p>
+            </div>
+
+            <div class="stat-box">
+                <h2 class="counter" data-target="1700">0</h2>
+                <p>Placements</p>
+            </div>
+
+            <div class="stat-box">
+                <h2 class="counter" data-target="2700">0</h2>
+                <p>Alumni</p>
+            </div>
+
+        </div>
+
+        <!-- Bottom Cards -->
+        <div class="info-container">
+
+            <div class="info-box fade-up">
+                <h3>OUR STORY</h3>
+                <p>
+                    IHMS Kotdwara has built a legacy of quality education, innovation, and student success through dedication.
+                </p>
+            </div>
+
+            <div class="info-box fade-up">
+                <h3>OUR VISION</h3>
+                <p>
+                    To create skilled professionals with leadership, ethics, and practical excellence.
+                </p>
+            </div>
+
+            <div class="info-box fade-up">
+                <h3>OUR MISSION</h3>
+                <p>
+                    To provide modern education with career growth, values, and confidence.
+                </p>
+            </div>
+
+            <div class="info-box fade-up">
+                <h3>OUR VALUES</h3>
+                <p>
+                    Innovation, discipline, creativity, responsibility, and service to society.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <style>
+        .stats-section {
+            position: relative;
+            padding: 80px 40px;
+            background: url('https://www.ihms.ac.in/wp-content/uploads/2022/04/DSC_3730.jpg') center/cover no-repeat;
+            overflow: hidden;
+        }
+        
+        .overlay {
+            position: absolute;
+            inset: 0;
+            background: rgba(0, 40, 80, 0.70);
+        }
+        
+        .stats-container,
+        .info-container {
+            position: relative;
+            z-index: 2;
+        }
+        
+        .stats-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 25px;
+            margin-bottom: 40px;
+        }
+        
+        .stat-box {
+            padding: 35px;
+            border: 1px solid rgba(255, 255, 255, 0.25);
+            color: white;
+            text-align: center;
+            backdrop-filter: blur(6px);
+            border-radius: 12px;
+            transform: translateY(40px);
+            opacity: 0;
+            animation: slideUp 1s forwards;
+        }
+        
+        .stat-box h2 {
+            font-size: 55px;
+        }
+        
+        .stat-box p {
+            font-size: 24px;
+        }
+        
+        .info-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 25px;
+        }
+        
+        .info-box {
+            padding: 35px;
+            color: white;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(6px);
+            border-radius: 12px;
+            opacity: 0;
+            transform: translateY(50px);
+        }
+        
+        .info-box h3 {
+            margin-bottom: 15px;
+        }
+        
+        .fade-up.show {
+            animation: fadeUp 1s forwards;
+        }
+        
+        @keyframes slideUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes fadeUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        body.dark-mode .stats-section {
+            background: #111;
+        }
+    </style>
+
+    <script>
+        /* Counter Animation */
+        const counters = document.querySelectorAll('.counter');
+
+        counters.forEach(counter => {
+            const updateCount = () => {
+                const target = +counter.getAttribute('data-target');
+                const count = +counter.innerText;
+                const speed = target / 100;
+
+                if (count < target) {
+                    counter.innerText = Math.ceil(count + speed);
+                    setTimeout(updateCount, 20);
+                } else {
+                    counter.innerText = target + "+";
+                }
+            };
+            updateCount();
+        });
+
+        /* Scroll Animation */
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("show");
+                }
+            });
+        });
+
+        document.querySelectorAll('.fade-up').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
+
+    <!-- Quick Links -->
+    <section class="about-college">
+        <div class="container">
+
+            <h2>Best Institute for Post Graduate & Graduate Degree Programmes in India</h2>
+            <p>
+                In the dynamic and vibrant world of emerging industries and evolving future, pertinent knowledge and skills are extremely significant to help one strive and succeed. Taking this cue, the Institute of Hospitality and Science, IHMS Kotdwar, has been imparting
+                splendid education to all the students, with the perfect equilibrium of academics and non-academics skills. We are one of the prime institutions in Uttarakhand and have helped our students to drive the progress in all forms. Since our
+                inception, the institute has provided high-impact learning and empowered students with professional skills and boundless knowledge in the relevant stream.
+            </P>
+            <p>
+                Our institution is versed with expert and experienced teachers who are industry professionals and comprehend the students’ priorities as per industry standards. IHMS leverages its extensive resources to deliver a sturdy, thoughtfully designed curriculum
+                that is tailor-made for the students according to the updated industry norms and culture.
+            </P>
+            <p>
+                Institute of Hospitality, Management and Sciences, IHMS Kotdwar is the best Institute for Hospitality and other profession-oriented courses like MBA, MCA, BBA, BCA, and BSc. (IT). IHMS is constantly ranked among the top hospitality and science institutions
+                in the entire Garhwal region. We teach students to develop innovative skills in their relevant areas, enabling them to acquire the ability to efficiently and tactfully deal with the challenges in their professional life. Our courses offer
+                students appropriate and informative course materials, real-world experience, and ample opportunities to demonstrate their leadership skills. The institute aims to make its students acquainted with global trends in hotel and hospitality
+                management. We aim to offer hands-on industry-focused experiences to our students.
+            </p>
+
+
+
+            <div class="college-gallery">
+                <img src="https://www.ihms.ac.in/wp-content/uploads/2022/04/DSC_3671.jpg">
+                <img src="https://www.ihms.ac.in/wp-content/uploads/2022/04/DSC_3502.jpg">
+                <img src="https://www.ihms.ac.in/wp-content/uploads/2022/04/DSC_3417.jpg">
+                <img src="https://www.ihms.ac.in/wp-content/uploads/2022/04/DSC_3628.jpg">
+                <img src="https://www.ihms.ac.in/wp-content/uploads/2022/04/DSC_3251.jpg">
+                <img src="https://www.ihms.ac.in/wp-content/uploads/2024/04/123A9082.jpg">
+
+            </div>
+
+        </div>
+
+        <!-- ADD THIS SECTION TO YOUR WEBSITE -->
+
+        <section class="programmes-section">
+
+            <div class="container programmes-grid">
+
+                <!-- Left Side -->
+                <div class="programmes-left">
+                    <h2>OUR PROGRAMMES</h2>
+
+                    <p>
+                        Welcome to IHMS Kotdwara, one of the leading colleges in Uttarakhand, offering career-focused degree programmes in management, hospitality, computer applications and information technology.
+                    </p>
+
+                    <p>
+                        Our campus provides modern classrooms, computer labs, hotel training facilities, experienced faculty and practical learning opportunities for student success.
+                    </p>
+
+                    <a href="/apply" class="apply-btn">APPLY NOW</a>
+                </div>
+
+                <!-- Right Side -->
+                <div class="programmes-right">
+
+                    <a href="/course" class="programme-item">
+                        <span>🏢</span>
+                        <p>Master of Business Administration (MBA)</p>
+                        <small>➜</small>
+                    </a>
+
+                    <a href="/course" class="programme-item">
+                        <span>💻</span>
+                        <p>Master of Computer Application (MCA)</p>
+                        <small>➜</small>
+
+                    </a>
+
+                    <a href="/course" class="programme-item">
+                        <span>🏨</span>
+                        <p>Bachelor of Hotel Management (BHM)</p>
+                        <small>➜</small>
+                    </a>
+
+                    <a href="/course" class="programme-item">
+                        <span>📊</span>
+                        <p>Bachelor of Business Administration (BBA)</p>
+                        <small>➜</small>
+                    </a>
+
+                    <a href="/course" class="programme-item">
+                        <span>🖥️</span>
+                        <p>Bachelor of Computer Application (BCA)</p>
+                        <small>➜</small>
+                    </a>
+
+                    <a href="/course" class="programme-item">
+                        <span>📚</span>
+                        <p>B.Sc Information Technology</p>
+                        <small>➜</small>
+                    </a>
+
+                    <a href="/course" class="programme-item">
+                        <span>🎓</span>
+                        <p>Certificate in Hotel Management</p>
+                        <small>➜</small>
+                    </a>
+
+                </div>
+
+            </div>
+        </section>
+
+        <style>
+            .programmes-section {
+                padding: 80px 20px;
+                background: #f3f3f3;
+            }
+            
+            .programmes-grid {
+                display: grid;
+                grid-template-columns: 1fr 1.2fr;
+                gap: 50px;
+                align-items: center;
+            }
+            
+            .programmes-left h2 {
+                font-size: 52px;
+                margin-bottom: 25px;
+                font-weight: 800;
+            }
+            
+            .programmes-left p {
+                font-size: 20px;
+                line-height: 1.8;
+                margin-bottom: 20px;
+                color: #444;
+            }
+            
+            .apply-btn {
+                display: inline-block;
+                margin-top: 20px;
+                padding: 14px 35px;
+                background: #003c64;
+                color: white;
+                text-decoration: none;
+                border-radius: 10px;
+                transition: 0.3s;
+            }
+            
+            .apply-btn:hover {
+                background: #005b96;
+                transform: translateY(-4px);
+            }
+            
+            .programmes-right {
+                display: flex;
+                flex-direction: column;
+            }
+            
+            .programme-item {
+                display: grid;
+                grid-template-columns: 60px 1fr 30px;
+                gap: 20px;
+                align-items: center;
+                padding: 18px 0;
+                border-bottom: 1px solid #bbb;
+                text-decoration: none;
+                color: #555;
+                transition: 0.3s;
+            }
+            
+            .programme-item span {
+                font-size: 30px;
+            }
+            
+            .programme-item p {
+                font-size: 24px;
+                font-weight: 600;
+            }
+            
+            .programme-item small {
+                font-size: 24px;
+            }
+            
+            .programme-item:hover {
+                color: #003c64;
+                transform: translateX(8px);
+            }
+            /* Dark Mode */
+            
+            body.dark-mode .programmes-section {
+                background: #121212;
+            }
+            
+            body.dark-mode .programmes-left h2,
+            body.dark-mode .programme-item,
+            body.dark-mode .programmes-left p {
+                color: white;
+            }
+            
+            body.dark-mode .programme-item {
+                border-bottom: 1px solid #444;
+            }
+            /* Responsive */
+            
+            @media(max-width:900px) {
+                .programmes-grid {
+                    grid-template-columns: 1fr;
+                }
+                .programmes-left h2 {
+                    font-size: 38px;
+                }
+                .programme-item p {
+                    font-size: 18px;
+                }
+            }
+        </style>
+
+        <section class="quick-links">
+            <div class="container">
+                <h3>Quick Access</h3>
+
+                <div class="links-grid">
+                    <a href="/login" class="link-card">Student Login</a>
+                    <a href="/admission" class="link-card">Admission Portal</a>
+                    <a href="/apply" class="link-card">Online Application</a>
+                    <a href="/contact" class="link-card">Contact Us</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Chatbot Toggle Button -->
+        <div class="chatbot-toggle" id="chatbotToggle">
+            <div class="chat-icon">💬</div>
+            <span>Ask Queries</span>
+        </div>
+
+        <!-- Chatbot Window -->
+        <div class="chatbot-window" id="chatbotWindow">
+            <div class="chatbot-header">
+                <h4>College AI Assistant</h4>
+                <button class="close-btn" id="closeChatbot">&times;</button>
+            </div>
+
+            <div class="chatbot-messages" id="chatMessages">
+                <div class="message bot-message">
+                    <div class="message-content">
+                        Hello! I'm your College AI Assistant. How can I help you today?
+                        <br><small>You can ask me about:</small>
+                        <br><small>• Admissions</small>
+                        <br><small>• Courses</small>
+                        <br><small>• Fees</small>
+                        <br><small>• Faculties</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="chatbot-input">
+                <input type="text" id="chatInput" placeholder="Type your message..." autocomplete="off">
+                <button id="sendBtn">Send</button>
+            </div>
+        </div>
+
+        <script src="/js/chatbot.js"></script>
+
+        <footer>
+            © 2026 IHMS Kotdwara | Excellence in Education
+        </footer>
+
+</body>
+
+</html>

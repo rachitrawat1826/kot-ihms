@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Signup</title>
+    <link rel="stylesheet" href="/css/auth.css">
+</head>
+
+<body>
+
+    <div class="auth-container">
+        <h2>Create Account</h2>
+
+        <form action="/apply" method="POST">
+            <div class="input-group">
+                <label>Username</label>
+                <input type="text" name="username" required>
+            </div>
+
+            <div class="input-group">
+                <label>Email</label>
+                <input type="email" name="email" required>
+            </div>
+
+            <div class="input-group">
+                <label>Password</label>
+                <input type="password" name="password" required>
+            </div>
+
+            <button type="submit">Sign Up</button>
+
+            <p class="switch">
+                Already have an account? <a href="/login">Login</a>
+            </p>
+        </form>
+    </div>
+
+    <script src="/js/auth.js"></script>
+</body>
+
+</html>
