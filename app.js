@@ -25,17 +25,33 @@ const PORT = process.env.PORT || 3000;
 
 // main().catch(err => console.log(err));
 
-const dbUrl = process.env.ATLASDB;
+// const dbUrl = process.env.ATLASDB;
 
-async function main() {
+// async function main() {
+//     try {
+//         await mongoose.connect(dbUrl);
+//         console.log("Connected to MongoDB Atlas ✅");
+//     } catch (err) {
+//         console.log("MongoDB connection error ❌", err.message);
+//     }
+// }
+async function startServer() {
     try {
-        await mongoose.connect(dbUrl);
+        await mongoose.connect(process.env.ATLASDB);
         console.log("Connected to MongoDB Atlas ✅");
+
+        const PORT = process.env.PORT || 3000;
+
+        app.listen(PORT, () => {
+            console.log(`server is working on port ${PORT}`);
+        });
+
     } catch (err) {
         console.log("MongoDB connection error ❌", err.message);
     }
 }
 
+startServer();
 main();
 app.use(cookieParser());
 app.use(session({
