@@ -70,9 +70,12 @@ app.use(methodeOverride("_method"))
 
 
 
+// app.get('/', (req, res) => {
+//     res.render("home")
+// })
 app.get('/', (req, res) => {
-    res.render("home")
-})
+    res.send("WORKING ROOT ROUTE");
+});
 app.get('/apply', (req, res) => {
     res.render('apply');
 })
