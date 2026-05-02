@@ -10,7 +10,7 @@ const flash = require("connect-flash");
 const methodeOverride = require('method-override');
 const User = require("./model/user");
 const { inLoggedIn, saveRedirecturl } = require("./middleware");
-const PORT = process.env.PORT || 3000;
+// const PORT = process.env.PORT || 3000;
 
 
 
@@ -143,6 +143,6 @@ app.get('/logout', (req, res) => {
 })
 
 
-app.listen(PORT, () => {
-    console.log(`server is working on port ${PORT}`);
-});
+// app.listen(PORT, () => {
+//     console.log(`server is working on port ${PORT}`);
+// });
