@@ -52,7 +52,7 @@ async function startServer() {
 }
 
 startServer();
-main();
+
 app.use(cookieParser());
 app.use(session({
     secret: "keyboard cat",
