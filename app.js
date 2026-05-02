@@ -68,7 +68,7 @@ app.use(methodeOverride("_method"))
 
 
 
-app.get('/home', (req, res) => {
+app.get('/', (req, res) => {
     res.render("home")
 })
 app.get('/apply', (req, res) => {
@@ -79,7 +79,7 @@ app.post('/apply', async(req, res) => {
     try {
         const user = new User({ username, email });
         const registereduser = await User.register(user, password);
-        res.redirect('/home');
+        res.redirect('/');
     } catch (err) {
         console.log(err);
         res.send("Error signing up");
@@ -105,7 +105,7 @@ app.post('/login',
     passport.authenticate('local', {
         failureRedirect: '/login'
     }), async(req, res) => {
-        const redirecturl = res.locals.redirectUrl || '/home'
+        const redirecturl = res.locals.redirectUrl || '/'
         res.redirect(redirecturl)
 
     }
@@ -117,7 +117,7 @@ app.get('/logout', (req, res) => {
             console.log(err);
             res.send("Error logging out ")
         }
-        res.redirect('/home')
+        res.redirect('/')
     })
 })
 
