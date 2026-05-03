@@ -42,7 +42,7 @@ async function startServer() {
 
         const PORT = process.env.PORT || 3000;
 
-        app.listen(PORT, () => {
+        app.listen(PORT, '0.0.0.0', () => {
             console.log(`server is working on port ${PORT}`);
         });
 
@@ -86,12 +86,12 @@ app.use(methodeOverride("_method"))
 
 
 
-// app.get('/', (req, res) => {
-//     res.render("home")
-// })
 app.get('/', (req, res) => {
-    res.send("WORKING ROOT ROUTE");
-});
+        res.render("home")
+    })
+    // app.get('/', (req, res) => {
+    //     res.send("WORKING ROOT ROUTE");
+    // });
 app.get('/apply', (req, res) => {
     res.render('apply');
 })
